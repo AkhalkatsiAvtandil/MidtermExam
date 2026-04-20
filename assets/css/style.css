@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 55px;
+}
+/* prelative/absolute */
+.boxlable {
+  position: relative;
+  top: -70px;
+  left: 320px;
+  background-color: aliceblue;
+  padding-top: 4px;
+
+  border-radius: 50px;
+}
+.VIPtop {
+  position: relative;
+  width: 76px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  top: -190px;
+  background-color: rgba(41, 178, 78, 1);
+  border-radius: 15px;
+  text-align: right;
+}
