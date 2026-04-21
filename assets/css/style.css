@@ -9,22 +9,34 @@
   padding: 55px;
 }
 /* prelative/absolute */
+.boximage button img {
+  width: 11px;
+  height: 11px;
+}
 .boxlable {
-  position: relative;
-  top: -70px;
-  left: 320px;
+  position: absolute;
+  bottom: -11px;
+  left: 315px;
   background-color: aliceblue;
-  padding-top: 4px;
-
-  border-radius: 50px;
+  padding: 9px;
+  padding-left: 11px;
+  padding-right: 11px;
+  z-index: 1000;
+  border-radius: 50%;
+}
+.boximage {
+  position: relative;
+  z-index: 999;
 }
 .VIPtop {
-  position: relative;
+  position: absolute;
   width: 76px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  top: -190px;
+  top: 10px;
+  left: 10px;
+  padding-bottom: 9px;
+  padding-top: 9px;
   background-color: rgba(41, 178, 78, 1);
   border-radius: 15px;
   text-align: right;
+  z-index: 1000;
 }
