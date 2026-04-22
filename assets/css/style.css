@@ -110,7 +110,7 @@ form {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background-image: url("/assets/img/backgimage.png");
+  background-image: url("../img/backgimage.png");
   object-fit: fill;
   /* object-position: center; */
 }
