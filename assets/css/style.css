@@ -6,7 +6,7 @@
 .container {
   max-width: 1640px;
   margin: 0 auto;
-  padding: 0 55px;
+  padding: 0px;
 }
 /* img {
   width: 100%;
@@ -23,11 +23,13 @@ a {
 ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 48px;
 }
-li {
+/* li {
   margin-right: 48px;
-}
+} */
 /* headerstyling */
 header {
   display: flex;
@@ -53,6 +55,7 @@ header {
   grid-row: 1 / -1;
   grid-column: 1 / 2;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: rgba(248, 248, 248, 1);
   margin: 0;
@@ -113,6 +116,7 @@ form {
   background-image: url("../img/1.jpg");
   object-fit: fill;
   border-radius: 24px;
+
   /* object-position: center; */
 }
 h3 {
@@ -128,6 +132,7 @@ h3 {
 .bgimage form input {
   height: 48px;
   border-radius: 10px;
+  width: 324px;
 }
 
 /* 
@@ -182,7 +187,7 @@ h4 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 395px;
+  width: 395px;
   height: 424px;
   justify-content: space-evenly;
   /* margin-top: 10px; */
@@ -243,15 +248,17 @@ h4 {
 
 /* footer S T Y L E */
 footer {
-  height: 180px;
+  background-color: rgba(41, 178, 78, 1);
 }
 .footerroof {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 32px 0 32px;
 }
 .footerground {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 32px;
   border-top: 1px solid rgba(208, 208, 208, 1);
