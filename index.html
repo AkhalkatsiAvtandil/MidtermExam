@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html"><img src="assets/img/" alt="logo" /></a>
+    <header class="container">
+      <a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
       <nav>
         <ul>
           <li><a href="#" target="_self">Home</a></li>
@@ -17,145 +17,177 @@
           <li><a href="#" target="_self">Sign In</a></li>
         </ul>
       </nav>
-      <button type="button">Sell Something</button>
+      <button class="headerbutton" type="button">Sell Something</button>
     </header>
-    <main>
+    <main class="container">
       <!-- <p>შეგიძლია ამათ css-ში გრიდის დახმარებით ფრაქციები მიუთითო ზუსტად რომ დასვა ვიდსები</p> -->
-      <section class="sectionlocation">
-        <h1>Location</h1>
-        <form action="#">
-          <select name="Location" id="Location">
-            <option value="All Kenya">All Kenya</option>
-            <option value="South Kenya">South Kenya</option>
-            <option value="North Kenya">North Kenya</option>
-          </select>
-        </form>
-        <h2>Property</h2>
-        <form action="#">
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="apartment1"> Houses & Apartments for Rent</label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment2"> Houses & Apartments for Sale</label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment3"> Land & Plots for Rent</label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment4"> Land & Plots for Sale </label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment5"> Commercial Property for Rent</label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment6"> Commercial Property for Sale </label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment7"> Event Centres, Venues & Worksta </label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment8"> Short Let Property </label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment9"> Land & Plots for Sale </label>
-          <input
-            type="checkbox"
-            id="apartment"
-            name="apartment"
-            value="apartment"
-          />
-          <label for="vapartment10">Commercial Property for Rent</label>
-        </form>
-        <h2>Price range</h2>
-        <form action="#">
-          <input
-            type="checkbox"
-            id="Price range"
-            name="Price range"
-            value="Price range"
-          />
-          <label for="Price range1">Under 13 K</label>
-          <input
-            type="checkbox"
-            id="Price range"
-            name="Price range"
-            value="Price range"
-          />
-          <label for="Price range2">13 - 160 K</label>
-          <input
-            type="checkbox"
-            id="Price range"
-            name="Price range"
-            value="Price range"
-          />
-          <label for="Price range3">160 K - 6 M</label>
-          <input
-            type="checkbox"
-            id="Price range"
-            name="Price range"
-            value="Price range"
-          />
-          <label for="Price range4">6 - 55 M</label>
-          <input
-            type="checkbox"
-            id="Price range"
-            name="Price range"
-            value="Price range"
-          />
-          <label for="Price range5">6 - 55 M</label>
-        </form>
-      </section>
-      <section class="bgimage">
-        <img src="assets/img/" alt="image for buildings" />
-        <h3>Find the house you want easily</h3>
-        <p>Buy, sell, rent or lease on just one platform</p>
-        <search>
-          <form>
-            <input
-              name="searchapartments"
-              id="searchapartments"
-              placeholder="Search"
-            />
+      <div class="gridinputs">
+        <section class="sectionlocation">
+          <h1>Location</h1>
+          <form action="#">
+            <select name="Location" id="Location">
+              <option value="All Kenya">All Kenya</option>
+              <option value="South Kenya">South Kenya</option>
+              <option value="North Kenya">North Kenya</option>
+            </select>
           </form>
-        </search>
-      </section>
+          <h2>Property</h2>
+          <form action="#">
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment1"> Houses & Apartments for Rent</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment2"> Houses & Apartments for Sale</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment3"> Land & Plots for Rent</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment4"> Land & Plots for Sale </label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment5"> Commercial Property for Rent</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment6"> Commercial Property for Sale </label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment7"> Event Centres, Venues & Worksta </label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment8"> Short Let Property </label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment9"> Land & Plots for Sale </label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="apartment"
+                name="apartment"
+                value="apartment"
+              />
+              <label for="apartment10">Commercial Property for Rent</label>
+            </div>
+          </form>
+          <h2>Price range</h2>
+          <form action="#">
+            <div class="item">
+              <input
+                type="checkbox"
+                id="Price range"
+                name="Price range"
+                value="Price range"
+              />
+              <label for="Price range1">Under 13 K</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="Price range"
+                name="Price range"
+                value="Price range"
+              />
+              <label for="Price range2">13 - 160 K</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="Price range"
+                name="Price range"
+                value="Price range"
+              />
+              <label for="Price range3">160 K - 6 M</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="Price range"
+                name="Price range"
+                value="Price range"
+              />
+              <label for="Price range4">6 - 55 M</label>
+            </div>
+            <div class="item">
+              <input
+                type="checkbox"
+                id="Price range"
+                name="Price range"
+                value="Price range"
+              />
+              <label for="Price range5">6 - 55 M</label>
+            </div>
+          </form>
+        </section>
+        <section class="bgimage">
+          <!-- <img src="assets/img/bgimage.png" alt="image for buildings" /> -->
+          <h3>Find the house you want easily</h3>
+          <p>Buy, sell, rent or lease on just one platform</p>
+          <search>
+            <form>
+              <input
+                name="searchapartments"
+                id="searchapartments"
+                placeholder="Search"
+              />
+            </form>
+          </search>
+        </section>
+      </div>
       <section class="boxcards">
         <a href="assets/card.html">
           <div class="card">
@@ -198,27 +230,29 @@
       </section>
     </main>
     <footer>
-      <div class="footerroof">
-        <nav>
-          <ul>
-            <li><a href="#" target="_self">Home</a></li>
-            <li><a href="#" target="_self">Discover</a></li>
-            <li><a href="#" target="_self">Contact us</a></li>
-            <li><a href="#" target="_self">Sign In</a></li>
-          </ul>
-        </nav>
-        <a href="mailto:Support@Roberts.com">Support@Roberts.com</a>
-        <nav>
-          <ul>
-            <li><a href="#" target="_self">Facebook</a></li>
-            <li><a href="#" target="_self">instagram</a></li>
-            <li><a href="#" target="_self">YouTube</a></li>
-            <li><a href="#" target="_self">Twitter</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footerground">
-        <a href="index.html">© 2022 Robert.co.ke Gibraltar</a>
+      <div class="container">
+        <div class="footerroof">
+          <nav>
+            <ul>
+              <li><a href="#" target="_self">Home</a></li>
+              <li><a href="#" target="_self">Discover</a></li>
+              <li><a href="#" target="_self">Contact us</a></li>
+              <li><a href="#" target="_self">Sign In</a></li>
+            </ul>
+          </nav>
+          <a href="mailto:Support@Roberts.com">Support@Roberts.com</a>
+          <nav>
+            <ul>
+              <li><a href="#" target="_self">Facebook</a></li>
+              <li><a href="#" target="_self">instagram</a></li>
+              <li><a href="#" target="_self">YouTube</a></li>
+              <li><a href="#" target="_self">Twitter</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footerground">
+          <a href="index.html">© 2022 Robert.co.ke Gibraltar</a>
+        </div>
       </div>
     </footer>
   </body>
