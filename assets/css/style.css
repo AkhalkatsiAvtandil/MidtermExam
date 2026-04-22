@@ -106,12 +106,30 @@ form {
 .bgimage {
   grid-row: 1 / -1;
   grid-column: 2 / 3;
-  /* width: 500px;
-  height: 500px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
   object-fit: fill;
-  object-position: center;
+  /* object-position: center; */
   background-image: url("/assets/img/bgimage.png");
 }
+h3 {
+  margin-top: 60px;
+}
+.bgimage p {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.bgimage form {
+  width: 324px;
+}
+.bgimage form input {
+  height: 48px;
+  border-radius: 10px;
+}
+
 /* 
 */
 /* prelative/absolute */
