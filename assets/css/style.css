@@ -8,9 +8,9 @@
   margin: 0 auto;
   padding: 0px;
 }
-/* img {
+img {
   width: 100%;
-} */
+}
 footer {
   background-color: rgba(41, 178, 78, 1);
 }
@@ -55,7 +55,7 @@ header {
   grid-row: 1 / -1;
   grid-column: 1 / 2;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   background-color: rgba(248, 248, 248, 1);
   margin: 0;
@@ -73,6 +73,7 @@ select {
   align-content: center;
   padding-bottom: 10px;
 }
+
 input[type="checkbox"] {
   appearance: none;
   width: 16px;
@@ -114,7 +115,9 @@ form {
   align-items: center;
   align-content: center;
   background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
   object-fit: fill;
+  background-size: cover;
   border-radius: 24px;
 
   /* object-position: center; */
@@ -145,12 +148,17 @@ h4 {
 .boxcards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(0, auto); */
   gap: 20px;
   padding-bottom: 120px;
 }
+/* .h4flex {
+  display: flex;
+  justify-content: flex-start;
+} */
 /* .card:nth-child(1) {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -187,13 +195,16 @@ h4 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: center;
   width: 395px;
   height: 424px;
   justify-content: space-evenly;
   /* margin-top: 10px; */
   border: 1px solid;
   border-radius: 24px;
+  background-color: rgba(248, 248, 248, 1);
 }
+
 .cardprice {
   text-align: right;
 }
@@ -214,8 +225,8 @@ h4 {
 }
 
 .boximage button img {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
 }
 .boxlable {
   position: absolute;
@@ -249,6 +260,7 @@ h4 {
 /* footer S T Y L E */
 footer {
   background-color: rgba(41, 178, 78, 1);
+  height: 180px;
 }
 .footerroof {
   display: flex;
