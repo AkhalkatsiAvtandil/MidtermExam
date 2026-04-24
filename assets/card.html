@@ -3,9 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/card.css" /> -->
     <title>card info</title>
   </head>
   <body>
-    <p>404555</p>
+    <header class="container">
+      <a href="/index.html"><img src="img/logo.png" alt="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="#" target="_self">Home</a></li>
+          <li><a href="#" target="_self">Discover</a></li>
+          <li><a href="#" target="_self">Contact us</a></li>
+          <li><a href="#" target="_self">Sign In</a></li>
+        </ul>
+      </nav>
+      <button class="headerbutton" type="button">Sell Something</button>
+    </header>
+    <main class="container">
+      <section class="cardinfo">
+        <div>
+          <img src="img/card3.png" alt="appartment image" />
+        </div>
+        <div class="appartmentinfo">
+          <p class="cardviptop">VIP TOP+</p>
+          <h1>2bdrm Apartment in Yatch, Thindigua/Kasarini for Rent</h1>
+          <p>Kiambu, Kiambu / Kiambu , Thindigua/Kasarini</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim praesent elementum facilisis
+            leo, vel fringilla est ullamcorper eget
+          </p>
+          <span>
+            <p>Apartament</p>
+            <p>3 bedroom</p>
+            <p>2 bathroom</p>
+            <p>Parking</p>
+          </span>
+          <div>
+            <p class="ccardlow">Property address</p>
+            <p>mombasa rd</p>
+          </div>
+          <div>
+            <p class="ccardlow">Condition</p>
+            <p>Fairly Used</p>
+          </div>
+          <div>
+            <p class="ccardlow">Condition</p>
+            <p>Fairly Used</p>
+          </div>
+        </div>
+        <div>
+          <p class="ccardlow">Facilities</p>
+          <p>
+            24-hour Electricity, Dining Area, En Suite, Hot Water, Kitchen
+            Cabinets, Kitchen Shelf, Microwave, Refrigerator
+          </p>
+        </div>
+        <div>
+          <p class="ccardlow">Estate name</p>
+          <p>Next Gen</p>
+        </div>
+        <div>
+          <p class="ccardlow">Furnishing</p>
+          <p>Semi-Furnished</p>
+        </div>
+        <div>
+          <p class="ccardlow">Property size</p>
+          <p>220 sq.m.</p>
+        </div>
+        <div>
+          <h5>1450$/ Month</h5>
+          <span>
+            <button class="send-btn" type="button" onclick="sendMessage()">
+              <i class="fa fa-paper-plane"></i> Sent message
+            </button>
+            <a href="tel:+1-555-555-5555">Call</a>
+          </span>
+        </div>
+      </section>
+      <section class="boxcards">
+        <!-- <a href="assets/card.html"> -->
+        <div class="card">
+          <div class="boximage">
+            <a href="card.html">
+              <img src="img/box1.png" alt="apartment image" />
+            </a>
+            <p class="VIPtop">VIP TOP+</p>
+            <button class="boxlable" type="button">
+              <img src="img/lable.png" alt="" />
+            </button>
+          </div>
+          <p class="cardstrong">
+            <strong>200 Acres Parcel for Sale in Namanga</strong>
+          </p>
+          <p class="ccardlow">Kajiado, Namanga</p>
+          <p class="cardprice"><strong>1450$</strong>/Month</p>
+          <span class="cardspan">
+            <p>5 bedrooms</p>
+            <p>3 bathrooms</p>
+            <p>450 sp.m.</p>
+          </span>
+        </div>
+        <!-- </a> -->
+        <!-- <a href="assets/card.html"> -->
+        <!-- <div class="card">
+          <div class="boximage">
+            <a href="assets/card.html">
+              <img src="assets/img/box1.png" alt="apartment image"
+            /></a>
+            <p class="VIPtop">VIP TOP+</p>
+            <button class="boxlable" type="button">
+              <img src="assets/img/lable.png" alt="" />
+            </button>
+          </div>
+          <p class="cardstrong">200 Acres Parcel for Sale in Namanga</p>
+          <p class="ccardlow">Kajiado, Namanga</p>
+          <p class="cardprice">1450$ / Month</p>
+          <span class="cardspan">
+            <p>5 bedrooms</p>
+            <p>3 bathrooms</p>
+            <p>450 sp.m.</p>
+          </span>
+        </div> -->
+        <!-- 2 -->
+        <div class="card">
+          <div class="boximage">
+            <a href="card.html">
+              <img src="img/box2.png" alt="apartment image" />
+            </a>
+            <p class="VIPtop">VIP TOP+</p>
+            <button class="boxlable" type="button">
+              <img src="img/lable.png" alt="" />
+            </button>
+          </div>
+          <p class="cardstrong">
+            <strong>200 Acres Parcel for Sale in Namanga</strong>
+          </p>
+          <p class="ccardlow">Kajiado, Namanga</p>
+          <p class="cardprice"><strong>1450$</strong>/Month</p>
+
+          <span class="cardspan">
+            <p>5 bedrooms</p>
+            <p>3 bathrooms</p>
+            <p>450 sp.m.</p>
+          </span>
+        </div>
+        <!-- 3 -->
+        <div class="card">
+          <div class="boximage">
+            <a href="card.html">
+              <img src="img/box3.png" alt="apartment image" />
+            </a>
+            <p class="VIPtop">VIP TOP+</p>
+            <button class="boxlable" type="button">
+              <img src="img/lable.png" alt="" />
+            </button>
+          </div>
+          <p class="cardstrong">
+            <strong>200 Acres Parcel for Sale in Namanga</strong>
+          </p>
+          <p class="ccardlow">Kajiado, Namanga</p>
+          <p class="cardprice"><strong>1450$</strong>/Month</p>
+          <span class="cardspan">
+            <p>5 bedrooms</p>
+            <p>3 bathrooms</p>
+            <p>450 sp.m.</p>
+          </span>
+        </div>
+        <!-- 4 -->
+        <div class="card">
+          <div class="boximage">
+            <a href="card.html">
+              <img src="img/box1.png" alt="apartment image" />
+            </a>
+            <p class="VIPtop">VIP TOP+</p>
+            <button class="boxlable" type="button">
+              <img src="img/lable.png" alt="" />
+            </button>
+          </div>
+          <p class="cardstrong">
+            <strong>200 Acres Parcel for Sale in Namanga</strong>
+          </p>
+          <p class="ccardlow">Kajiado, Namanga</p>
+          <p class="cardprice"><strong>1450$</strong>/Month</p>
+          <span class="cardspan">
+            <p>5 bedrooms</p>
+            <p>3 bathrooms</p>
+            <p>450 sp.m.</p>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footerroof">
+          <nav>
+            <ul>
+              <li><a href="#" target="_self">Home</a></li>
+              <li><a href="#" target="_self">Discover</a></li>
+              <li><a href="#" target="_self">Contact us</a></li>
+              <li><a href="#" target="_self">Sign In</a></li>
+            </ul>
+          </nav>
+          <a href="mailto:Support@Roberts.com">Support@Roberts.com</a>
+          <nav>
+            <ul>
+              <li><a href="#" target="_self">Facebook</a></li>
+              <li><a href="#" target="_self">instagram</a></li>
+              <li><a href="#" target="_self">YouTube</a></li>
+              <li><a href="#" target="_self">Twitter</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footerground">
+          <a href="index.html">© 2022 Robert.co.ke Gibraltar</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

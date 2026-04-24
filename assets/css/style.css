@@ -275,3 +275,25 @@ footer {
   padding-top: 32px;
   border-top: 1px solid rgba(208, 208, 208, 1);
 }
+
+/*   CARD.HTML STYLE   */
+
+.cardinfo img {
+  max-width: 810px;
+  height: 732px;
+}
+.cardinfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.cardviptop {
+  width: 76px;
+  top: 10px;
+  left: 10px;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  background-color: rgba(41, 178, 78, 1);
+  border-radius: 15px;
+  text-align: right;
+}
