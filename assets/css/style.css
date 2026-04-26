@@ -693,4 +693,8 @@ footer {
   border: 1px solid rgba(41, 178, 78, 1) s;
   background-color: rgba(41, 178, 78, 1);
   color: rgba(255, 255, 255, 1); */
+  .boxlable {
+    bottom: 12px;
+    right: 10px;
+  }
 }
