@@ -20,12 +20,13 @@
     <meta property="og:title" content="find the house you want easily" />
     <meta
       property="og:description"
-      content="Buy, sell, rent or lease on just one platform?"
+      content="Buy, sell, rent or lease on just one platform"
     />
     <meta
       property="og:image"
       content="https://raw.githubusercontent.com/AkhalkatsiAvtandil/MidtermExam/refs/heads/main/assets/img/1.jpg"
     />
+    <link rel="shortcut icon" href="assets/img/logo.png" type="logo.png" />
   </head>
   <body>
     <header class="container">
@@ -39,6 +40,7 @@
         </ul>
       </nav>
       <button class="headerbutton" type="button">Sell Something</button>
+      <button class="buttonsearch" type="button">🔍︎</button>
     </header>
     <main class="container">
       <!-- <p>შეგიძლია ამათ css-ში გრიდის დახმარებით ფრაქციები მიუთითო ზუსტად რომ დასვა ვიდსები</p> -->
@@ -198,7 +200,7 @@
           <!-- <img src="assets/img/bgimage.png" alt="image for buildings" /> -->
           <h3>Find the house you want easily</h3>
           <p>Buy, sell, rent or lease on just one platform</p>
-          <search>
+          <search class="searchapartments">
             <form>
               <div>
                 <input
@@ -419,16 +421,18 @@
       <div class="container">
         <div class="footerroof">
           <nav>
-            <ul>
+            <ul class="footertopul">
               <li><a href="#" target="_self">Home</a></li>
               <li><a href="#" target="_self">Discover</a></li>
               <li><a href="#" target="_self">Contact us</a></li>
               <li><a href="#" target="_self">Sign In</a></li>
             </ul>
           </nav>
-          <a href="mailto:Support@Roberts.com">Support@Roberts.com</a>
+          <a class="footermail" href="mailto:Support@Roberts.com"
+            >Support@Roberts.com</a
+          >
           <nav>
-            <ul>
+            <ul class="footerbotul">
               <li><a href="#" target="_self">Facebook</a></li>
               <li><a href="#" target="_self">instagram</a></li>
               <li><a href="#" target="_self">YouTube</a></li>
@@ -438,6 +442,35 @@
         </div>
         <div class="footerground">
           <a href="index.html">© 2022 Robert.co.ke Gibraltar</a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="mediafootertop">
+        <div class="mediafooter">
+          <div>
+            <a href="#"><img src="assets/img/home.png" alt="homeicon" /></a>
+            <p>Home</p>
+          </div>
+          <div>
+            <a href="#"><img src="assets/img/cube.png" alt="3dcubeicon" /></a>
+            <p>Discover</p>
+          </div>
+          <div class="plusefix">
+            <a href="#"
+              ><img class="pluse" src="assets/img/pluse.png" alt=""
+            /></a>
+            <p>Sell</p>
+          </div>
+          <div>
+            <a href="#"
+              ><img src="assets/img/message.png" alt="messageicon"
+            /></a>
+            <p>Message</p>
+          </div>
+          <div>
+            <a href="#"><img src="assets/img/user.png" alt="usericon" /></a>
+            <p>Profile</p>
+          </div>
         </div>
       </div>
     </footer>

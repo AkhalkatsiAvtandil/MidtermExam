@@ -72,6 +72,12 @@ header {
 button {
   font-family: archvio;
 }
+.buttonsearch {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
 
 /* mainstyling */
 .gridinputs {
@@ -436,4 +442,143 @@ footer {
   border: 1px solid rgba(41, 178, 78, 1) s;
   background-color: rgba(41, 178, 78, 1);
   color: rgba(255, 255, 255, 1);
+}
+.mediafooter {
+  display: none;
+}
+/* TEST MEDIA */
+@media (width <= 375px) {
+  header {
+    margin: 0;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav,
+  button {
+    display: none;
+  }
+  .buttonsearch {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+  .sectionlocation {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: rgba(248, 248, 248, 1);
+    margin: 0;
+    padding: 38px 32px;
+    border-radius: 24px;
+  }
+  .sectionlocation {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .searchapartments {
+    display: none;
+  }
+  .bgimage {
+    margin: 0;
+    padding: 0 25px;
+    height: 435px;
+    width: 335;
+  }
+  h4 {
+    margin-left: 20px;
+  }
+  .boxcards {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 324px;
+    margin-bottom: 50px;
+  }
+  .boximage {
+    max-width: 303px;
+    height: 202px;
+  }
+
+  .gridinputs {
+    margin: 0;
+    padding: 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer {
+    margin: 0;
+    padding: 0 25px;
+    width: 375px;
+    height: 376px;
+    background-color: rgba(41, 178, 78, 1);
+    border-radius: 24px;
+    /* padding-bottom: 600px; */
+  }
+
+  .footermail {
+    display: none;
+  }
+  .footerroof {
+    justify-content: space-around;
+    column-gap: 100px;
+    row-gap: 10px;
+  }
+  .footertopul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .footerbotul {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  .mediafooter {
+    position: fixed;
+    z-index: 1000;
+
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 600px; */
+
+    gap: 16px;
+    height: 90px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .mediafooter div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0px;
+  }
+  .mediafooter img {
+    margin-top: 7px;
+    width: 24px;
+    height: 24px;
+  }
+  .pluse {
+    position: relative;
+    z-index: 1000;
+    top: -15px;
+    background-color: rgba(41, 178, 78, 1);
+  }
+  .plusefix img {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+  }
+  .footerground {
+    margin-bottom: 300px;
+  }
+  .divider {
+    padding-top: 1px;
+  }
 }
