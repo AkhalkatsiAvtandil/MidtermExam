@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "archvio";
+  src: url(../font/Archivo-Italic-VariableFont_wdth\,wght.ttf);
+  src: url(../font/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +23,22 @@ footer {
 body {
   background-color: rgba(242, 242, 242, 1);
 }
+header a {
+  color: rgba(0, 0, 0, 0.9);
+}
+header a:hover {
+  color: rgba(41, 178, 78, 1);
+  text-decoration: underline;
+  transition: 1s;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 1s;
+}
 a {
   text-decoration: none;
+  font-family: archvio;
+  color: rgba(255, 255, 255, 1);
 }
 ul {
   list-style-type: none;
@@ -27,6 +47,10 @@ ul {
   align-items: center;
   gap: 48px;
 }
+p {
+  font-family: archvio;
+}
+
 /* li {
   margin-right: 48px;
 } */
@@ -36,13 +60,17 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(242, 242, 242, 1);
-  margin-top: 42px;
+  padding-bottom: 42px;
 }
 .headerbutton {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(41, 178, 78, 1);
   height: 42px;
   border-radius: 12px;
+  font-family: archvio;
+}
+button {
+  font-family: archvio;
 }
 
 /* mainstyling */
@@ -97,6 +125,8 @@ input[type="checkbox"]:checked::after {
 }
 h1 {
   padding-bottom: 16px;
+  font-family: archvio;
+  font-weight: 600;
 }
 h2 {
   padding-top: 32px;
@@ -124,10 +154,16 @@ form {
 }
 h3 {
   margin-top: 60px;
+  font-family: archvio;
+  font-weight: 500;
+  line-height: 100%;
 }
 .bgimage p {
   margin-top: 10px;
   margin-bottom: 40px;
+  font-family: archvio;
+  font-weight: 400;
+  opacity: 60%;
 }
 .bgimage form {
   max-width: 324px;
@@ -144,6 +180,8 @@ h3 {
 h4 {
   padding-top: 32px;
   padding-bottom: 36px;
+  font-family: archvio;
+  font-weight: 500;
 }
 .boxcards {
   display: flex;
@@ -207,6 +245,25 @@ h4 {
 
 .cardprice {
   text-align: right;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(41, 178, 78, 1);
+}
+.cardprice span {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 12px;
+}
+.contactinfoprice {
+  text-align: right;
+  font-weight: 800;
+  font-size: 52px;
+  color: rgba(41, 178, 78, 1);
+}
+.contactinfo span {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  font-size: 20px;
 }
 .boxcard {
   background-color: rgba(248, 248, 248, 1);
@@ -220,8 +277,9 @@ h4 {
 .cardstrong {
   padding-top: 8px;
 }
-.cardlow {
+.ccardlow {
   padding-top: 18px;
+  opacity: 60%;
 }
 
 .boximage button img {
@@ -282,6 +340,9 @@ footer {
   max-width: 810px;
   height: 732px;
 }
+.lowerp {
+  opacity: 60%;
+}
 .gridsection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -294,7 +355,7 @@ footer {
 }
 .gridsection :nth-child(2) {
   grid-column: 2 / -1;
-  grid-template-rows: 1 / 2;
+  grid-template-rows: 3 / -1;
 }
 .cardinfo {
   /* display: grid;
@@ -313,34 +374,66 @@ footer {
   background-color: rgba(41, 178, 78, 1);
   border-radius: 15px;
   text-align: right;
+  margin-bottom: 29px;
 }
 .appartmentinfo {
   display: flex;
   flex-direction: column;
 }
+.apinfoh1 {
+  margin-bottom: 12px;
+}
+.apinfop {
+  margin-top: 32px;
+  margin-bottom: 57px;
+  font-family: archvio;
+}
 .rooms {
   display: flex;
   flex-direction: row;
+  gap: 24px;
+  margin-bottom: 41px;
 }
 .appartmentdetails {
   display: flex;
   flex-direction: row;
+  gap: 132px;
 }
-.propadress {
+.propaddress {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 .facilities {
   display: flex;
   flex-direction: column;
   width: 133px;
+  gap: 5px;
 }
 .nextgeninfo {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 .contactinfo {
   display: flex;
   justify-content: end;
   justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+.cardbutton {
+  width: 153px;
+  height: 47px;
+  border: 1px solid rgba(41, 178, 78, 1);
+  color: rgba(41, 178, 78, 1);
+  border-radius: 12px;
+}
+.cardcall {
+  width: 80px;
+  height: 47px;
+  border-radius: 12px;
+  border: 1px solid rgba(41, 178, 78, 1) s;
+  background-color: rgba(41, 178, 78, 1);
+  color: rgba(255, 255, 255, 1);
 }
