@@ -447,7 +447,7 @@ footer {
   display: none;
 }
 /* TEST MEDIA */
-@media (width <= 375px) {
+@media (375px >= width), (750px >= width) {
   header {
     margin: 0;
     padding: 0 25px;
@@ -455,7 +455,8 @@ footer {
     justify-content: space-between;
   }
   header nav,
-  button {
+  .headerbutton,
+  .buttonsearch {
     display: none;
   }
   .buttonsearch {
@@ -538,7 +539,6 @@ footer {
   .mediafooter {
     position: fixed;
     z-index: 1000;
-
     bottom: 0;
     right: 0;
     margin: 0;
@@ -546,7 +546,6 @@ footer {
     display: flex;
     justify-content: center;
     /* margin-bottom: 600px; */
-
     gap: 16px;
     height: 90px;
     border-top-left-radius: 24px;
@@ -581,4 +580,99 @@ footer {
   .divider {
     padding-top: 1px;
   }
+
+  /* STYLE CARD.HTML */
+
+  .gridsection {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardimg {
+    margin: 0 auto;
+    padding: 0, 0;
+    width: 335px;
+    height: 316px;
+  }
+  .rooms {
+    column-gap: 7px;
+  }
+  .cardinfo {
+    margin: 0 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0px;
+    width: 375px;
+    /* height: 1060px; */
+    background-color: rgba(194, 194, 194, 0.3);
+    border-radius: 12px;
+  }
+  /* .appartmentinfo {
+    margin: 0 auto;
+    padding: 0, 15px;
+  } */
+  .appartmentdetails {
+    display: flex;
+    flex-direction: column;
+  }
+  .propaddress div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .facilities {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    align-items: flex-start;
+  }
+  .nextgeninfo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contactinfo {
+    display: flex;
+    flex-direction: column;
+    column-gap: 12px;
+  }
+  .contactinfo span {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .contactinfoprice {
+    margin-left: 0px;
+  }
+
+  .cardcall {
+    width: 334px;
+    height: 47px;
+  }
+  .cardbutton {
+    width: 334px;
+    height: 47px;
+  }
+  #cardnone {
+    display: none;
+  }
+  /* .buttonspan {
+    width: 200px;
+    height: 200px;
+  } */
+  main {
+    width: 375px;
+    margin: 0;
+    padding: 0, auto;
+  }
+  /* .cardcall {
+  width: 80px;
+  height: 47px;
+  border-radius: 12px;
+  border: 1px solid rgba(41, 178, 78, 1) s;
+  background-color: rgba(41, 178, 78, 1);
+  color: rgba(255, 255, 255, 1); */
 }
