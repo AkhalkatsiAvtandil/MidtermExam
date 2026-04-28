@@ -14,6 +14,12 @@
   margin: 0 auto;
   padding: 0px;
 }
+#container {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
 img {
   width: 100%;
 }
@@ -369,6 +375,7 @@ footer {
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(0, auto); */
+
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -383,6 +390,7 @@ footer {
   border-radius: 15px;
   text-align: right;
   margin-bottom: 29px;
+  color: rgba(255, 255, 255, 1);
 }
 .appartmentinfo {
   display: flex;
@@ -449,7 +457,10 @@ footer {
   display: none;
 }
 /* TEST MEDIA */
-@media (375px >= width), (750px >= width) {
+
+/* MEDIA */
+
+@media (375px >= width), (980px >= width) {
   header {
     margin: 0;
     padding: 0 25px;
@@ -492,6 +503,11 @@ footer {
   }
   h4 {
     margin-left: 20px;
+    font-family: archvio;
+    font-weight: 500;
+  }
+  #h4display {
+    display: none;
   }
   .boxcards {
     margin: 0 auto;
@@ -662,6 +678,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    margin-bottom: 45px;
   }
 
   .contactinfoprice {
